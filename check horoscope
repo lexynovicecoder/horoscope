@@ -1,0 +1,24 @@
+print('''This is a horoscope that determines ones zodiac sign.
+The zodiac signs can be used to determine one's compatibility with another person based on their
+zodiac signs.
+You must enter the birth day and month of you and the other person in numbers.
+ If the birth day or birth month of either you or the other person is a single digit please
+ precede that digit with 0.
+ example:
+ if i was born on first january i will input this : 0101
+ the month first followed by the day''')
+
+while True:
+    your_birthday = input('type in your birthday')
+    if len(your_birthday) == 4:
+        print(f"{your_birthday[:2]}/{your_birthday[2:]}")
+        break
+    print('the date you entered is invalid follow the instructions written above')
+if int(your_birthday) in range(120,219):
+    print("your zodiac sign is aquarius")
+if int(your_birthday) in range(219,321):
+    print("your zodiac sign is pisces")
+
+
+
+
